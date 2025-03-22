@@ -1,7 +1,7 @@
 body {
   font-family: "Arial", sans-serif;
-  background: linear-gradient(to bottom, #ffe4e1, #ffcdd2);
-  color: #d32f2f;
+  background: linear-gradient(to bottom right, #ffdde1, #ee9ca7);
+  color: #6b2737;
   text-align: center;
   padding: 20px;
   margin: 0;
@@ -12,69 +12,84 @@ body {
   min-height: 100vh;
   animation: fadeIn 1s ease-in;
 }
+
 h1 {
   font-size: 3em;
+  color: #d32f2f;
+  text-shadow: 2px 2px #fff;
   margin-bottom: 10px;
   animation: slideInDown 1s ease-out;
 }
+
 p {
   font-size: 1.5em;
   animation: fadeIn 1.5s ease-in;
+  color: #6b2737;
 }
+
 .heart {
-  font-size: 2em;
+  font-size: 3em;
   color: #e91e63;
   animation: pulse 1.5s infinite;
 }
+
 .container {
   max-width: 600px;
   width: 90%;
   margin: auto;
   padding: 20px;
-  border: 2px solid #d32f2f;
-  border-radius: 15px;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  border: 3px solid #d32f2f;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
   background: #fff;
   margin-bottom: 20px;
   transition: transform 0.3s ease;
 }
+
 .container:hover {
   transform: scale(1.05);
-}
-#poem {
-  margin-top: 20px;
-  font-style: italic;
-  color: #b71c1c;
 }
 
 .accordion {
   width: 100%;
   max-width: 600px;
 }
+
 .accordion-item {
   background: #fff;
   border: 1px solid #d32f2f;
-  border-radius: 5px;
+  border-radius: 10px;
   margin-bottom: 10px;
   overflow: hidden;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
 }
+
 .accordion-header {
   background: #d32f2f;
   color: #fff;
   padding: 10px;
   cursor: pointer;
   text-align: left;
+  font-weight: bold;
+  transition: background 0.3s ease;
 }
+
+.accordion-header:hover {
+  background: #b71c1c;
+}
+
 .accordion-content {
   display: none;
   padding: 10px;
   background: #fff0f0;
+  font-size: 1.2em;
 }
+
 .accordion-header.active + .accordion-content {
   display: block;
 }
 
-button#mute-btn {
+button {
   background-color: #d32f2f;
   color: #fff;
   border: none;
@@ -87,7 +102,7 @@ button#mute-btn {
   transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-button#mute-btn:hover {
+button:hover {
   background-color: #b71c1c;
   transform: scale(1.05);
 }
