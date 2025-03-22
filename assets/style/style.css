@@ -47,6 +47,33 @@ p {
   color: #b71c1c;
 }
 
+.accordion {
+  width: 100%;
+  max-width: 600px;
+}
+.accordion-item {
+  background: #fff;
+  border: 1px solid #d32f2f;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+.accordion-header {
+  background: #d32f2f;
+  color: #fff;
+  padding: 10px;
+  cursor: pointer;
+  text-align: left;
+}
+.accordion-content {
+  display: none;
+  padding: 10px;
+  background: #fff0f0;
+}
+.accordion-header.active + .accordion-content {
+  display: block;
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0;
